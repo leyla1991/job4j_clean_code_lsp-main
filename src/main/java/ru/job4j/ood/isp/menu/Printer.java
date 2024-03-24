@@ -4,9 +4,9 @@ public class Printer implements MenuPrinter {
     @Override
     public void print(Menu menu) {
         for (Menu.MenuItemInfo m : menu) {
-            System.out.println("-".repeat(m.getName().length())
+            System.out.println("-".repeat(m.getNumber().length())
                     + m.getNumber()
-                    + m.getChildren());
+                    + m.getName());
         }
     }
 }
